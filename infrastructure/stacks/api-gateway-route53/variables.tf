@@ -51,6 +51,10 @@ variable "team_id" {
 variable "programme" {
   description = ""
 }
+variable "terraform_networking_route53_zone_name" {
+    description = ""
+    default="k8s-nonprod.texasplatform.uk"
+}
 
 # ############################
 # # ROUTE53
@@ -60,5 +64,8 @@ variable "programme" {
 variable "dos_integration_sub_domain_name" {
   type        = string
   description = "sub domain name"
+}
+variable "texas_hosted_zone" {
+  description = ""
 }
 
